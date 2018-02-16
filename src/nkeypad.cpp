@@ -54,14 +54,14 @@ void nKeypad::drawText() {
 
     // Display the hex
     std::stringstream hss;
-    hss << std::uppercase << std::setfill('0') << std::setw(2) << std::hex << key;
+    hss << "0x" << std::uppercase << std::setfill('0') << std::setw(2) << std::hex << key;
     hexstr.append(hss.str());
 
     // Binary
     std::bitset<8> k(key);
     binstr.append(k.to_string<char,std::string::traits_type, std::string::allocator_type>());
   }
-  
+
   // Display the text
   int pos_x = min_x + 1;
   int pos_y = min_y + 2;
