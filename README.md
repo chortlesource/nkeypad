@@ -3,6 +3,8 @@
 ## C++ Ncurses keycode translator
 nkeypad is a simple ncurses tool that provider the user with the translation of individual keystrokes into Decimal, Binary, Hexadecimal values. It also detects when the modifier key (Ctrl) is depressed with keys that can be modified.
 
+![nkeypad running in terminal](gfx/nkeypad.jpg?raw=true "nKeypad")
+
 ## Dependencies
 * C++11
 * ncurses
